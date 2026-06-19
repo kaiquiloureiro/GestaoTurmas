@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+
+    <!-- TAG DO MEU SITE-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Esse é uma pagina modelo">
+    <meta name="keywords" content="sites,web desenvolvimento backend">
+    <meta name="author" content="Segura">
+    <title>EXERCÍCIO 01</title>
+
+    <!-- ICONE DO MEU SITE-->
+    <link rel="icon" href="https://static.vecteezy.com/system/resources/previews/010/412/011/original/graphic-designer-and-web-design-studio-tool-logo-free-vector.jpg" type="image/x-icon">
+
+</head>
+
+<body>
+    <h1><mark> ELEMENTOS (TAGS)</mark>DO HTML ATRAVÉS DO JAVASCRIPT </h1>
+    <hr>
+    <div>
+        <p>Estamos aprendendo javascript</p>
+        <hr>
+        <p> Aprender é muiro legal!!</p>
+        <hr>
+        <p> E para ajudar o aprendizado, é PRECISO praticar e exercitar </p>
+        <hr>
+    </div>
+    <script>
+        const tags_p = document.getElementsByTagName('p')
+        console.log(tags_p);
+        let tag_p_1 = tags_p[0];
+
+        tag_p_1.style.backgroundColor = "purple";
+        tag_p_1.style.color = "white";
+        tag_p_1.style.textAlign = "center";
+
+        let tag_p_2 = tags_p[1];
+        console.log(tag_p_2);
+        tag_p_2.style.backgroundColor = "red";
+        tag_p_2.style.color = "white";
+        tag_p_2.style.textAlign = "center";
+
+
+        let tag_p_3 = tags_p[2];
+        console.log(tags_p);
+        tag_p_3.style.backgroundColor = "blue";
+        tag_p_3.style.color = "white";
+        tag_p_3.style.textAlign = "center";
+
+
+        tag_p_3.innerHTML="ALTEREI O CONTEÚDO";      
+        tag_p_2.innerText="MUDEI" 
+
+
+
+    </script>
+</body>
+
+</html>

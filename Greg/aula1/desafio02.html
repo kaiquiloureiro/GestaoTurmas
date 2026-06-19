@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+
+    <!-- TAG DO MEU SITE-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Esse é uma pagina modelo">
+    <meta name="keywords" content="sites,web desenvolvimento backend">
+    <meta name="author" content="Segura">
+    <title>DESAFIO 2 - AULA 01 </title>
+
+    <!-- ICONE DO MEU SITE-->
+    <link rel="icon" href="https://static.vecteezy.com/system/resources/previews/010/412/011/original/graphic-designer-and-web-design-studio-tool-logo-free-vector.jpg" type="image/x-icon">
+
+</head>
+
+<body>
+    <h1> integrando os recursos de interativaidade do JS</h1>
+    <hr>
+    <p id="resposta"></p>
+    <script>
+        window.alert("DESAFIO 2");
+        let num1 = window.prompt("DIGITE O PRIMEIRO NÚMERO");
+        let num2 = window.prompt("DIGITE O SEGUNDO NÚMERO");
+        let resultado = window.prompt("QUAL OPERAÇÃO DESEJA REALIZAR? DIGITE: + , -");
+        let resposta=0;
+        if (resultado == "+") {
+            resposta = parseFloat(num1) + parseFloat(num2);
+        } else {
+            resposta = parseFloat(num1) - parseFloat(num2);
+        }
+       document.getElementById("resposta").innerHTML= "O resultado da operação é: " + resposta;
+
+    </script>
+</body>
+
+</html>
